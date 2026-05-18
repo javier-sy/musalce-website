@@ -1,0 +1,8 @@
+# Configuración de versión para musalce-website
+TYPE="site"
+PKG_NAME="musalce.yeste.studio"
+TEST_COMMAND=""
+PUBLISH_PLATFORM="GitHub Pages"
+SITE_URL="https://musalce.yeste.studio"
+# Los websites no usan versionado: publish = git push, sin tag.
+TAG_ON_PUBLISH=false
