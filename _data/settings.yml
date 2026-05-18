@@ -1,0 +1,33 @@
+#-------------------------------
+# Site Settings
+title: MusaLCE
+logo: # You can add own logo. For example '/images/logo.png'.
+author: Javier Sánchez Yeste
+description: MusaLCE - Live Coding Environment for MusaDSL
+
+#-------------------------------
+# Menu Settings
+menu__settings:
+  menu__items:
+    - title: 'Home'
+      url: '/#home'
+    - title: 'About'
+      url: '/#about'
+    - title: 'Components'
+      url: '/#components'
+    - title: 'Getting Started'
+      url: '/#getting-started'
+    - title: 'MusaDSL'
+      url: 'https://musadsl.yeste.studio'
+      external: true
+
+#-------------------------------
+# Footer Settings
+social:
+  - {icon: "logo-github", color: "#24292e", label: Github, link: "https://github.com/javier-sy"}
+
+#-------------------------------
+# Contact Settings
+contact:
+  email: javier@yeste.studio
+  author_website: https://yeste.studio

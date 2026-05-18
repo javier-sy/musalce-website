@@ -1,0 +1,35 @@
+#-------------------------------
+# General Site Settings
+url: "https://musalce.yeste.studio"
+#-------------------------------
+
+# Shared theme — see https://github.com/javier-sy/yeste-studio-theme
+remote_theme: javier-sy/yeste-studio-theme
+
+# Build Settings
+markdown: kramdown
+permalink: /:title
+plugins:
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+exclude:
+  - .idea/
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+
+sass:
+  style: compressed
+  silence_deprecations:
+    - import
