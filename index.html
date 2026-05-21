@@ -53,10 +53,11 @@ description: MusaLCE is a live coding environment that turns MusaDSL into a real
         <li>
           <strong>Suite workflow</strong> — <code>musalce-server</code> packages the REPL, sequencer
           and DAW handler for Ableton Live 11+ or Bitwig Studio 5+. The server exposes a <code>daw.*</code>
-          API for transport, tracks, voices and Surface controls. Optional Stream Deck integration via
-          <strong>Pulso</strong>, <a href="https://yeste.studio" target="_blank" rel="noopener">yeste.studio</a>'s
-          upcoming Stream Deck plugin for the MusaLCE Surface protocol (Bitwig only initially;
-          public release pending). See the
+          API for transport, tracks, voices and Surface controls. Optional Stream Deck integration
+          through <strong>Pulso</strong>'s MusaLCE Surface relay
+          (<a href="https://yeste.studio" target="_blank" rel="noopener">yeste.studio</a>'s upcoming
+          Stream Deck control system for music DAWs; MusaLCE Surface support is one of its features —
+          Bitwig only initially; public release pending). See the
           <a href="https://github.com/javier-sy/musalce-server/blob/master/docs/architecture.md" target="_blank" rel="noopener">architecture reference</a>.
         </li>
       </ul>
@@ -150,7 +151,7 @@ description: MusaLCE is a live coding environment that turns MusaDSL into a real
           <p class="component__description">
             Controller extension for Bitwig Studio 5+ (Java, Bitwig Extension API 18). Bridges Bitwig
             with <code>musalce-server</code> over OSC, exposes preferences for OSC ports, includes the
-            <code>MusaLCESurfaceRelay</code> for Stream Deck integration (Pulso side).
+            <code>MusaLCESurfaceRelay</code> that talks to Pulso Bridge for Stream Deck integration.
           </p>
           <div class="component__links">
             <a href="https://github.com/javier-sy/MusaLCEforBitwig" target="_blank" rel="noopener">
@@ -307,7 +308,7 @@ description: MusaLCE is a live coding environment that turns MusaDSL into a real
         <li><a href="https://musadsl.yeste.studio">MusaDSL</a> &mdash; Ruby framework for algorithmic sound and musical composition.</li>
         <li><a href="https://musalce.yeste.studio">MusaLCE</a> &mdash; live coding environment for Ableton Live and Bitwig Studio.</li>
         <li><a href="https://nota.yeste.studio">Nota</a> &mdash; Claude Code plugin for AI-assisted MusaDSL composition.</li>
-        <li><strong>Pulso</strong> &mdash; Stream Deck plugin for MusaLCE Surface controls <em>(upcoming)</em>.</li>
+        <li><strong>Pulso</strong> &mdash; Stream Deck control for music DAWs (Bitwig today; Ableton planned), with MusaLCE Surface integration <em>(upcoming)</em>.</li>
       </ul>
       <p>
         For the full map &mdash; descriptions, how they relate, which one to pick for what &mdash; see
