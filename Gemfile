@@ -4,5 +4,5 @@ gem 'github-pages', group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem 'jekyll-sitemap'
-  gem 'jekyll-remote-theme'
+  gem 'jekyll-remote-theme', '>= 0.4.3', '< 0.5'
 end

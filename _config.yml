@@ -4,7 +4,7 @@ url: "https://musalce.yeste.studio"
 #-------------------------------
 
 # Shared theme — see https://github.com/javier-sy/yeste-studio-theme
-remote_theme: javier-sy/yeste-studio-theme
+remote_theme: javier-sy/yeste-studio-theme@main
 
 # Build Settings
 markdown: kramdown
