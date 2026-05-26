@@ -1,14 +1,14 @@
 ---
 layout: default
-title: MusaLCE — Live coding toolkit and DAW suite for MusaDSL
-description: MusaLCE is the live coding side of MusaDSL — a REPL-based toolkit you can wire to any MIDI/OSC/custom destination, plus a ready-made suite for Bitwig Studio and Ableton Live.
+title: MusaLCE — Standalone REPL and MusaLCE Server Suite for MusaDSL
+description: MusaLCE is the live coding side of MusaDSL — a standalone REPL toolkit you can wire to any MIDI/OSC/custom destination, plus the MusaLCE Server Suite for Bitwig Studio and Ableton Live.
 ---
 
 <!-- Hero Section -->
 <section id="home" class="hero-section">
   <div class="container">
     <h1 class="hero__title">MusaLCE</h1>
-    <p class="hero__subtitle">Live coding toolkit and DAW suite for <a href="https://musadsl.yeste.studio">MusaDSL</a></p>
+    <p class="hero__subtitle">Standalone REPL and MusaLCE Server Suite for <a href="https://musadsl.yeste.studio">MusaDSL</a></p>
     <div class="hero__meta">
       <div class="meta-item">
         <ion-icon name="code-slash-outline"></ion-icon>
@@ -20,7 +20,7 @@ description: MusaLCE is the live coding side of MusaDSL — a REPL-based toolkit
       </div>
       <div class="meta-item">
         <ion-icon name="git-branch-outline"></ion-icon>
-        <span>Toolkit + DAW suite</span>
+        <span>Standalone REPL + Server Suite</span>
       </div>
     </div>
   </div>
@@ -61,18 +61,18 @@ description: MusaLCE is the live coding side of MusaDSL — a REPL-based toolkit
         </div>
       </div>
       <div class="feature-block">
-        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> The DAW suite</h3>
+        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> The MusaLCE Server Suite</h3>
         <div class="feature-block__body">
           <p>
             For the most common case &mdash; driving Bitwig Studio or Ableton Live from a code
-            editor &mdash; MusaLCE ships a ready-made version of that assembly. The
-            <code>musalce-server</code> gem packages the sequencer, transport, surface and DAW
-            link into a single command; a small DAW connector (one for Bitwig, one for Live)
-            bridges to your DAW; the VSCode extension is your editor client. Tracks are exposed
-            by symbolic name, the sequencer locks to the DAW's clock automatically, and a
-            <code>daw</code> object gives you transport, voices and &mdash; with a Stream Deck
-            &mdash; physical surface controls. Internally this is the toolkit pre-wired for you;
-            you skip the assembly step.
+            editor &mdash; MusaLCE ships the <strong>MusaLCE Server Suite</strong>, a ready-made
+            version of that assembly. The <code>musalce-server</code> gem packages the sequencer,
+            transport, surface and DAW link into a single command; a small DAW connector (one for
+            Bitwig, one for Live) bridges to your DAW; the VSCode extension is your editor client.
+            Tracks are exposed by symbolic name, the sequencer locks to the DAW's clock
+            automatically, and a <code>daw</code> object gives you transport, voices and &mdash;
+            with an elgato Stream Deck &mdash; physical surface controls. Internally the suite is
+            the toolkit pre-wired for you; you skip the assembly step.
           </p>
         </div>
       </div>
@@ -82,7 +82,7 @@ description: MusaLCE is the live coding side of MusaDSL — a REPL-based toolkit
       <p>
         Both paths use the same VSCode extension as editor client. The protocol it speaks is
         generic, so it works against the toolkit you built yourself just as well as against the
-        DAW suite.
+        MusaLCE Server Suite.
       </p>
     </div>
   </div>
@@ -95,8 +95,8 @@ description: MusaLCE is the live coding side of MusaDSL — a REPL-based toolkit
     <div class="section__content">
       <p>
         The two paths above are sketches. Below, the three building blocks of MusaLCE &mdash;
-        the toolkit, the DAW suite, and the optional Pulso surface &mdash; get a closer look,
-        each illustrated with real Ruby code that makes the APIs concrete.
+        the toolkit, the MusaLCE Server Suite, and the optional Pulso surface &mdash; get a
+        closer look, each illustrated with real Ruby code that makes the APIs concrete.
       </p>
     </div>
 
@@ -156,15 +156,15 @@ transport.start
       </div>
 
       <div class="feature-block">
-        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> The DAW suite &mdash; connector + musalce-server</h3>
+        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> The MusaLCE Server Suite &mdash; <code>musalce-server</code> + DAW connector</h3>
         <div class="feature-block__body">
           <p>
-            The DAW suite takes that same toolkit and pre-builds it for you &mdash; and adds a
-            <code>daw</code> object that gives you direct, named access to your DAW. You install
-            three components (the <code>musalce-server</code> gem, a small DAW connector for
-            Bitwig or Live, and the VSCode extension), launch the server with one command, and
-            the REPL is ready on port 1327. From the editor you can now talk to your DAW like
-            this:
+            The <strong>MusaLCE Server Suite</strong> takes that same toolkit and pre-builds it
+            for you &mdash; and adds a <code>daw</code> object that gives you direct, named
+            access to your DAW. You install three components (the <code>musalce-server</code>
+            gem, a small DAW connector for Bitwig or Live, and the VSCode extension), launch
+            the server with one command, and the REPL is ready on port 1327. From the editor
+            you can now talk to your DAW like this:
           </p>
 {% highlight ruby %}
 # Sent from VSCode while the server runs and Bitwig (or Live) is open:
@@ -218,19 +218,22 @@ daw.panic!
         <h3 class="feature-block__title"><ion-icon name="apps-outline"></ion-icon> Optional &mdash; Stream Deck control via Pulso</h3>
         <div class="feature-block__body">
           <p>
-            If you have an Elgato Stream Deck, <strong>Pulso</strong> can wire physical buttons
+            If you have an elgato Stream Deck, <strong>Pulso</strong> can wire physical buttons
             and encoders into your live coding session. Pulso is <a href="https://yeste.studio">yeste.studio</a>'s
-            upcoming Stream Deck control system for music DAWs (Bitwig today; Ableton planned),
-            so most of what it does has nothing to do with MusaLCE &mdash; it controls transport,
-            track navigation, devices, parameters, the browser. But one of Pulso's features is the
-            <strong>MusaLCE Surface protocol</strong>: a way for Pulso to forward physical control
-            events to your running score, and for your score to push display state (labels,
-            on/off state, encoder values) back to the physical control.
+            upcoming Stream Deck workflow system for DAWs (Bitwig today; Ableton planned), and
+            most of what it does has nothing to do with MusaLCE &mdash; it controls transport,
+            track navigation, devices, parameters, the browser. One of Pulso's features is the
+            <strong>MusaLCE Surface protocol</strong>, exposed through the <strong>Pulso Workflow
+            plugin</strong>: physical buttons and encoders that fire <strong>MusaDSL Sequencer
+            Events</strong> in your running score, and that receive their display state (labels,
+            on/off state, encoder values) back from your code.
           </p>
           <p>
-            In the score it's two API surfaces talking to each other: <code>on :event</code>
-            handlers fire when the user touches a control, and <code>surface[:event]</code> writes
-            back the state you want that control to show:
+            Each control is identified by an <code>event</code> name. That same <code>event</code>
+            is what the sequencer launches when the user touches the control &mdash; so you
+            subscribe to it from your score with <code>on :event do |parameters| &hellip; end</code>.
+            And <code>surface[:event].set &hellip;</code> pushes label, state, value and range
+            back to the physical button or encoder:
           </p>
 {% highlight ruby %}
 # Set up a toggle (rendered with on / off / inactive palettes on the Stream Deck):
@@ -274,7 +277,7 @@ end
       <ul>
         <li><strong>Microsecond-precise sequencer</strong> locked to the DAW's MIDI clock (suite) or to any clock source you choose (toolkit).</li>
         <li><strong>Hot reload of score code</strong> &mdash; the sequencer keeps playing while you send fragments from the editor.</li>
-        <li><strong><code>daw.*</code> API</strong> in the suite &mdash; tracks by symbolic name, transport, panic, surface, MIDI sync.</li>
+        <li><strong><code>daw.*</code> API</strong> in the MusaLCE Server Suite &mdash; tracks by symbolic name, transport, panic, surface, MIDI sync.</li>
         <li><strong>Transport callbacks that survive Stop/Play</strong> &mdash; <code>on_start</code>, <code>after_stop</code>, <code>before_begin</code> for re-installing schedules and handlers wiped by the default <code>sequencer.reset</code> on stop.</li>
         <li><strong>Auto-launch of the server from Bitwig</strong> &mdash; no terminal needed; one toggle in the extension preferences.</li>
         <li><strong>Multi-instance MusaLCEforBitwig</strong> &mdash; more than 16 named MIDI channels by activating extra extension instances.</li>
@@ -306,11 +309,8 @@ end
             <code>on_error</code> to deliver async failures back to the editor.
           </p>
           <div class="component__links">
-            <a href="https://github.com/javier-sy/musa-dsl/blob/master/lib/musa-dsl/repl/repl.rb" target="_blank" rel="noopener">
-              <ion-icon name="logo-github"></ion-icon> Source
-            </a>
             <a href="https://github.com/javier-sy/musa-dsl/blob/master/docs/subsystems/repl.md" target="_blank" rel="noopener">
-              <ion-icon name="document-text-outline"></ion-icon> Subsystem doc
+              <ion-icon name="document-text-outline"></ion-icon> REPL - Live Coding Infrastructure Documentation
             </a>
           </div>
         </div>
@@ -361,9 +361,9 @@ end
       </div>
     </div>
 
-    <!-- DAW Suite Server -->
+    <!-- MusaLCE Server Suite (musalce-server gem) -->
     <div class="component-category">
-      <h3 class="category__title">DAW Suite Server</h3>
+      <h3 class="category__title">MusaLCE Server Suite</h3>
       <div class="components-grid">
         <div class="component-card">
           <h4 class="component__title">musalce-server</h4>
@@ -452,7 +452,7 @@ end
       <ul>
         <li><a href="https://www.ruby-lang.org/" target="_blank" rel="noopener">Ruby 3.4+</a>.</li>
         <li><a href="https://code.visualstudio.com/" target="_blank" rel="noopener">Visual Studio Code</a> &mdash; the supported editor client (see <em>Editor Clients</em> above).</li>
-        <li><strong>For the DAW suite path:</strong> <strong>Bitwig Studio 5+</strong> or <strong>Ableton Live 11+</strong>; macOS today (auto-launch and IAC bus setup are macOS-specific).</li>
+        <li><strong>For the MusaLCE Server Suite path:</strong> <strong>Bitwig Studio 5+</strong> or <strong>Ableton Live 11+</strong>; macOS today (auto-launch and IAC bus setup are macOS-specific).</li>
         <li><strong>For the toolkit path:</strong> whatever Ruby libraries match your target (MIDI, OSC, sockets, custom protocols, …).<br>
 
           For MIDI you can use <code>midi-communications</code> (see <a href="https://musadsl.yeste.studio">musadsl.yeste.studio</a>).<br>
@@ -462,7 +462,7 @@ end
 
     <div class="feature-blocks">
       <div class="feature-block">
-        <h3 class="feature-block__title"><ion-icon name="build-outline"></ion-icon> Path 1 &mdash; REPL toolkit (custom)</h3>
+        <h3 class="feature-block__title"><ion-icon name="build-outline"></ion-icon> Path 1 &mdash; Standalone REPL (toolkit)</h3>
         <div class="feature-block__body">
           <p>
             The toolkit path is shorter to install but longer to set up &mdash; most of the work
@@ -501,11 +501,11 @@ code --install-extension javier-sy.musa-lce-client-for-vscode
       </div>
 
       <div class="feature-block">
-        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> Path 2 &mdash; DAW suite (Bitwig or Live)</h3>
+        <h3 class="feature-block__title"><ion-icon name="play-circle-outline"></ion-icon> Path 2 &mdash; MusaLCE Server Suite (Bitwig or Live)</h3>
         <div class="feature-block__body">
           <p>
-            The DAW suite path installs more pieces but has very little assembly afterwards. Two
-            sub-paths follow, one per DAW.
+            The MusaLCE Server Suite path installs more pieces but has very little assembly
+            afterwards. Two sub-paths follow, one per DAW.
           </p>
 
           <h4>Bitwig (preferred)</h4>
