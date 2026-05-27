@@ -1,8 +1,3 @@
-# Build and deploy the Jekyll site to GitHub Pages via Actions.
-# Replaces the previous legacy "Deploy from a branch" mechanism whose
-# builds had become invisible from Actions UI and were failing
-# silently with the generic "Page build failed." message.
-
 name: Deploy Jekyll site to Pages
 
 on:
