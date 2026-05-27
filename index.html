@@ -35,7 +35,7 @@ description: MusaLCE is the live coding side of MusaDSL — a standalone REPL to
         MusaLCE is the live coding side of <a href="https://musadsl.yeste.studio">MusaDSL</a>. Where
         MusaDSL gives you the tools to compose music algorithmically in Ruby, MusaLCE lets you do
         that work <em>live</em> &mdash; sending fragments of code from your editor into a running
-        session, watching the music reshape as you type, without ever stopping the sequencer.
+        session, watching the music reshape as you type, without ever stopping the clock.
       </p>
       <p>
         There are two ways to use it, and they suit very different situations.
@@ -536,12 +536,12 @@ code --install-extension javier-sy.musa-lce-client-for-vscode
 {% endhighlight %}
             </li>
             <li>
-              In Bitwig: <em>Settings → Controllers → + Add Controller → yeste.studio → MusaLCE</em>.
+              In Bitwig: <em>Settings → Controllers → + Add Controller → yeste.studio → MusaLCE</em>.<br>
               In <em>Settings → Controllers → MusaLCE → Settings → Configuration</em> enable
-              <strong>Osc Host</strong> and <strong>Clock Sender</strong>; in <em>Server</em>
-              enable <strong>Start Server</strong> &mdash; the extension launches
-              <code>musalce-server bitwig</code> automatically. Assign the MIDI input that will
-              act as the clock source.
+              <strong>Osc Host</strong> and <strong>Clock Sender</strong>;<br>
+              In <em>Server</em> enable <strong>Start Server</strong> &mdash; the extension launches
+              <code>musalce-server bitwig</code> automatically.<br>
+              Assign the MIDI input that will act as the clock source.
             </li>
             <li>
               In <em>Studio I/O Panel → MusaLCE</em>, name each MIDI channel to expose (these
