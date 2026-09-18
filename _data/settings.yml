@@ -1,8 +1,7 @@
 #-------------------------------
 # Site Settings
 title: MusaLCE
-logo: # You can add own logo. For example '/images/logo.png'.
-author: Javier Sánchez Yeste
+author: yeste.studio
 description: MusaLCE - Live Coding Environment for MusaDSL
 
 #-------------------------------
