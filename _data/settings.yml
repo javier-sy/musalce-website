@@ -34,3 +34,9 @@ social:
 contact:
   email: javier@yeste.studio
   author_website: https://yeste.studio
+
+#-------------------------------
+# Google Analytics
+# GA4 measurement ID, shared by the four yeste.studio sites. The theme loads it only after the visitor
+# accepts analytics cookies (consent banner); remove it and there is no banner and no analytics.
+google-analytics: G-RSN5GV4Y4T

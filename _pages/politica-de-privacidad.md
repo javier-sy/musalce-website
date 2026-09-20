@@ -12,12 +12,11 @@ tratamiento y protección de los datos de carácter personal de los usuarios y c
 recabados por la navegación o contratación de servicios a través de su sitio web.
 
 En este sentido, [musalce.yeste.studio](https://musalce.yeste.studio) ha adaptado esta web a las exigencias de la
-normativa vigente en materia de protección de datos personales,
-reflejada en la Ley Orgánica 15/1999 de 13 de diciembre, de Protección de Datos de Carácter Personal
-y en el Real Decreto 1720/2007, de 21 diciembre, por el que se aprueba el Reglamento de Desarrollo de la LOPD.
-Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo
-a la protección de las personas físicas (RGPD), así como con la Ley 34/2002, de 11 de julio,
-de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE o LSSI).
+normativa vigente en materia de protección de datos personales, reflejada en el Reglamento (UE) 2016/679 del
+Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas (RGPD),
+en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales
+(LOPDGDD) y en la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio
+Electrónico (LSSI).
 
 El uso de esta web implica la aceptación de esta política de privacidad.
 
@@ -48,18 +47,32 @@ seguridad establecidas en la legislación vigente.
 
 ## Tratamiento: Usuarios de la web
 
-Finalidad del tratamiento: gestión de la relación con las personas que navegan por la web.
+Finalidad del tratamiento: conocer el uso que se hace de la web (páginas visitadas, procedencia aproximada,
+dispositivo y navegador) para mantenerla y mejorarla.
+
+Base jurídica: tu consentimiento (artículo 6.1.a del RGPD), que das o rechazas en el aviso de cookies y puedes retirar
+en cualquier momento desde el enlace «configurar cookies» del pie de página, sin que ello afecte a la navegación.
 
 Descripción de las categorías de usuarios de la web y de las categorías de datos personales:
 
 - Usuarios de la web:
     - Personas que acceden a los contenidos publicados en la web.
 - Categorías de datos personales:
-    - De navegación: cookies técnicas de gestión de cookies.
+    - De navegación: datos de uso recogidos por Google Analytics (páginas visitadas, fecha y hora, procedencia
+    aproximada, dispositivo y navegador), asociados a un identificador aleatorio guardado en una cookie, y solo si
+    aceptas las cookies de análisis. Según Google, Google Analytics usa la dirección IP de los visitantes de la UE
+    solo para deducir la ubicación aproximada y la descarta de inmediato, sin registrarla.
+    Ver [política de cookies](/politica-de-cookies).
 - Las categorías de destinatarios a quienes se comunicaron o comunicarán los datos personales:
-    - GitHub Pages (GitHub, Inc.): servicio de hosting de la web.
-- Cuando sea posible, los plazos previstos para la supresión de las diferentes categorías de datos:
-    - No aplica.
+    - Google Ireland Limited (Gordon House, Barrow Street, Dublín 4, Irlanda), que presta Google Analytics como
+    encargado del tratamiento. Google puede transferir datos a Google LLC (Estados Unidos); esa transferencia está
+    amparada por la decisión de adecuación del Marco de Privacidad de Datos UE-EE. UU., al que Google LLC está
+    adherida. [Política de privacidad de Google](https://policies.google.com/privacy?hl=es).
+    - GitHub, Inc. (GitHub Pages): servicio de alojamiento de la web.
+- Plazos previstos para la supresión de las diferentes categorías de datos:
+    - Las cookies de Google Analytics caducan a los dos años de tu última visita; los datos de eventos se conservan en
+    Google Analytics 14 meses como máximo, y los informes agregados no identifican a nadie.
+    - La cookie que guarda tu decisión sobre las cookies de análisis caduca a los 24 meses.
 
 # Derechos de los usuarios
 
@@ -106,3 +119,5 @@ datos incorporados en sus ficheros.
 El interesado podrá ejercitar sus derechos mediante comunicación por escrito dirigida a la dirección de correo
 electrónico [javier@yeste.studio](mailto:javier@yeste.studio) con la referencia "Protección de datos/musalce.yeste.studio", especificando sus datos,
 acreditando su identidad y los motivos de su solicitud.
+
+_Última actualización: septiembre de 2026._

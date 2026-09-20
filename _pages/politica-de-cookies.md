@@ -6,52 +6,57 @@ noindex: true
 sitemap: false
 ---
 En esta web se recopila y utiliza la información según se indica en la [política de privacidad](/politica-de-privacidad).
-Una de las formas en las que se recopila la información es a través del uso de la tecnología llamada "cookies".
-En musalce.yeste.studio se utilizan varias cookies descritas más abajo.
+Una de las formas en las que se recopila es a través de las «cookies» y de otros mecanismos de almacenamiento del navegador.
+Esta página explica cuáles utiliza musalce.yeste.studio, para qué sirven y cómo decides sobre ellas.
 
 ## ¿Qué es una cookie?
-Una "cookie" es un texto que se almacena en tu navegador (Google Chrome, Safari, Firefox, Microsoft Edge, etc) cuando navegas por la mayoría de los sitios web.
-Las cookies permiten, entre otras cosas, que el propietario de la web conozca el uso que los visitantes hacen de ella.
 
-## ¿Qué NO es una cookie?
-No es un virus, ni un troyano, ni un gusano, ni spam, ni spyware, ni abre ventanas pop-up.
+Una cookie es un pequeño texto que un sitio web guarda en tu navegador (Chrome, Safari, Firefox, Edge, etc.) y que el
+navegador le devuelve en visitas posteriores. Junto a las cookies, un sitio puede guardar preferencias en el
+almacenamiento local del navegador; a efectos de esta política y de la normativa se tratan igual.
 
-## ¿Qué información almacena una cookie?
-Las cookies NO almacenan información sensible sobre ti, como tarjetas de crédito o datos bancarios, fotografías o información personal, etc.
-Los datos que guardan son de carácter técnico, estadísticos, de preferencias personales, de personalización de contenidos, etc.
+Las cookies no almacenan datos sensibles como tarjetas de crédito, datos bancarios o fotografías: lo que guardan son
+datos técnicos, estadísticos o de preferencias.
 
-## ¿Qué tipo de cookies existen?
+## ¿Qué tipos de cookies existen?
 
-**Cookies técnicas**: Son las más elementales y permiten, entre otras cosas, saber cuándo está navegando un humano o una aplicación automatizada, cuándo navega un usuario anónimo y uno registrado, tareas básicas para el funcionamiento de cualquier web dinámica.
+**Cookies técnicas**: necesarias para que la web funcione o para recordar una preferencia que has elegido tú, como el
+modo oscuro o tu propia decisión sobre las demás cookies. No requieren consentimiento.
 
-**Cookies de análisis**: Recogen información sobre el tipo de navegación que está realizando el usuario, las secciones que más utiliza, productos consultados, franja horaria de uso, idioma, etc.
+**Cookies de análisis**: permiten contar visitas y saber qué páginas se consultan y desde qué tipo de dispositivo,
+para mantener y mejorar la web. Requieren tu consentimiento.
 
-**Cookies publicitarias**: Muestran publicidad en función de la navegación del usuario, su país de procedencia, idioma, etc.
+**Cookies publicitarias**: muestran publicidad en función de la navegación. Esta web no las utiliza.
 
-## ¿Qué son las cookies propias y las de terceros?
-Las cookies propias son las generadas por la página que está visitando y las de terceros son las generadas por servicios o proveedores externos como Google Analytics, Facebook, Twitter, etc.
+Las cookies **propias** las instala la web que visitas; las **de terceros**, un proveedor externo, en este caso Google.
 
 ## ¿Qué cookies utiliza esta web?
 
-Esta web utiliza únicamente cookies propias de carácter técnico.
+{% include cookies-table.html %}
 
-### Cookies propias
+## ¿Cómo decides sobre las cookies de análisis?
 
-**De gestión de cookies** (cookies técnicas): permite recordar tu configuración de aceptación/rechazo del resto de cookies.
+Al llegar a la web, un aviso te permite aceptar o rechazar las cookies de análisis con un solo clic; hasta que
+decidas no se instala ninguna y seguir navegando no se interpreta como aceptación. Tu decisión se guarda durante
+24 meses en la cookie `ys_consent` y vale para yeste.studio y sus subdominios (musadsl.yeste.studio,
+musalce.yeste.studio y nota.yeste.studio), que comparten la misma configuración.
 
-**De preferencia de tema** (cookies técnicas): permite recordar tu preferencia de tema visual (modo claro/oscuro).
+Puedes cambiarla cuando quieras desde el enlace «configurar cookies» del pie de página. Si rechazas después de
+haber aceptado, las cookies de Google Analytics se borran y dejan de enviarse datos. Si la lista de cookies de esta
+web cambia, el aviso vuelve a aparecer para que decidas de nuevo.
 
-## ¿Se pueden eliminar las cookies?
+## ¿Se pueden eliminar las cookies desde el navegador?
 
-Para eliminar las cookies de un sitio web debes ir a la configuración de tu navegador y buscar las asociadas al dominio en cuestión y proceder a su eliminación:
+Sí. En la configuración de tu navegador puedes ver y borrar las cookies asociadas a cualquier dominio:
 
-- [Configuración de cookies para Google Chrome.](https://support.google.com/chrome/answer/95647?hl=es)
-- [Configuración de cookies para Apple Safari.](https://support.apple.com/es-es/HT201265)
-- [Configuración de cookies para Internet Explorer.](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies)
-- [Configuración de cookies para Mozilla Firefox.](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias)
+- [Google Chrome](https://support.google.com/chrome/answer/95647?hl=es)
+- [Apple Safari](https://support.apple.com/es-es/HT201265)
+- [Microsoft Edge](https://support.microsoft.com/es-es/microsoft-edge/eliminar-las-cookies-en-microsoft-edge-63947406-6c2b-9b38-f8e3-c7a03d5ca6a5)
+- [Mozilla Firefox](https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias)
 
 ## Más información sobre las cookies
 
-Puedes consultar el reglamento sobre cookies publicado por la _Agencia Española de Protección de Datos_ en su "Guía sobre el uso de las cookies" y obtener más información sobre las cookies en Internet, [www.aboutcookies.org](https://www.aboutcookies.org/).
+La _Agencia Española de Protección de Datos_ publica una [Guía sobre el uso de las cookies](https://www.aepd.es/guias/guia-cookies.pdf)
+con los criterios que sigue esta web.
 
-Si desea tener un mayor control sobre la instalación de cookies, puede instalar programas o complementos a su navegador, conocidos como herramientas de "Do Not Track", que le permitirán escoger aquellas cookies que desea permitir.
+_Última actualización: septiembre de 2026._
