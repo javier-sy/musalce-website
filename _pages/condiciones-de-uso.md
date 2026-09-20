@@ -91,8 +91,12 @@ protegidos por los derechos de autor, quedando expresamente prohibida toda repro
 distribución y transformación de los referidos elementos protegidos, salvo consentimiento expreso
 del titular del sitio web.
 
-El software MusaLCE y los proyectos relacionados están licenciados bajo la licencia LGPL 3.0 (Lesser General Public License).
-Los usuarios son bienvenidos a usar, probar, modificar y redistribuir el software según los términos de dicha licencia.
+El software MusaLCE y los proyectos relacionados se distribuyen bajo la licencia GNU General Public License,
+versión 3 o posterior (GPL-3.0-or-later): puedes usarlo, estudiarlo, modificarlo y redistribuirlo según los
+términos de dicha licencia.
+
+**Licencia comercial.** Si necesitas MusaLCE en condiciones que su licencia no cubre (por ejemplo, dentro de un
+producto cerrado), yeste.studio ofrece una licencia comercial: [javier@yeste.studio](mailto:javier@yeste.studio).
 
 [musalce.yeste.studio](https://musalce.yeste.studio) puede utilizar fuentes externas para la elaboración de sus contenidos y establecer links o
 hiperenlaces a artículos o informaciones de terceros citando siempre la fuente. El legítimo titular de los

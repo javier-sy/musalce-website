@@ -16,7 +16,7 @@ description: MusaLCE is the live coding side of MusaDSL — a standalone REPL to
       </div>
       <div class="meta-item">
         <ion-icon name="document-text-outline"></ion-icon>
-        <span>LGPL 3.0 License</span>
+        <span><a href="#license">GPL-3.0-or-later</a></span>
       </div>
       <div class="meta-item">
         <ion-icon name="git-branch-outline"></ion-icon>
@@ -284,9 +284,13 @@ end
         <li><strong>Editor-agnostic protocol</strong> &mdash; VSCode extension on the Marketplace today; any client that speaks the line-based REPL protocol works.</li>
         <li><strong>Surface controls</strong> via <code>surface[:event]</code> and <code>on :event</code> &mdash; physical buttons / encoders integrated with Pulso (Bitwig today).</li>
       </ul>
-      <p>
-        Licensed under <strong>LGPL 3.0</strong>.
-      </p>
+      <div id="license">
+        <p>
+          MusaLCE - the server, the Bitwig and Live connectors and the VSCode extension - is free
+          software under the same license as MusaDSL.
+        </p>
+        {% include license-notice.html product="MusaLCE" faq="https://musadsl.yeste.studio/#license" %}
+      </div>
     </div>
   </div>
 </section>
@@ -660,4 +664,4 @@ musalce-server live
 <!-- Related Products Section -->
 {% include related-products.html %}
 <!-- Author Section -->
-{% include author.html product="MusaLCE" family=true %}
+{% include author.html product="MusaLCE" family=true license="GPL-3.0-or-later" %}
